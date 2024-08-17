@@ -1,0 +1,151 @@
+@font-face {
+    font-family: gagalin;
+    src: url(fonte/Gagalin-Regular.otf);
+}
+
+@font-face {
+    font-family: open sans;
+    src: url(fonte/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: anton;
+    src: url(fonte/Anton-Regular.ttf);
+}
+
+* {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scrollbar-width: none;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    scrollbar-width: none;
+}
+
+header, main, footer{
+    padding:10px 50px 10px 50px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 6%;
+    width: 100%;
+    background: linear-gradient(to right, #41397c, #0e0e0e);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    z-index: 1;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    list-style: none;
+}
+
+nav ul li a{
+    color: white;
+    font-family: 'Gagalin' , sem serifa ; 
+    letter-spacing:0.15em;    
+    text-decoration: none;
+    display: block;                                     
+}
+
+main {
+    flex-grow: 1;
+    background-color: #0e0e0e;
+    color: white;
+    padding-top: 6%;
+    height: auto;
+}
+
+#apresentacao{
+    position: relative;
+}
+
+#pc{
+    width: 70%;
+}
+
+#intro{
+    position: absolute;
+    top: 20%;
+    left: 7%;
+    line-height: 1em;
+}
+
+#intro h2{
+    font-family: 'anton';
+    font-size: 5vw;
+    letter-spacing:.1em;
+    color:#00793e ;
+}
+
+#intro h4{
+    display: inline;
+}
+
+#intro p, h4{
+    color: #e8e8e8;
+    font-family:'open sans';
+    font-size: 2vw;
+    font-weight: 700;
+}
+
+#front{
+    color:#00793e;
+    font-weight: 800;
+}
+
+#contato{
+    position: absolute;
+    top: 46%;
+    left: 7%;
+    display: flex;
+    align-items: center;
+}
+
+#contato p{
+    display: inline;
+    background-color: #41397c;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 50px;
+    font-family: 'gagalin';
+    letter-spacing: .19em;
+    font-size: .7em;
+}
+
+#contato a img{
+    width: 30px;
+    height: auto;
+    margin: 0px 10px 0px;
+    filter: grayscale(1);
+    transition: .5s;
+}
+
+footer {
+    height: 5%;
+    background: linear-gradient(to left, #41397c, #0e0e0e);
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+}
+
+footer span{
+    color: #ffffff;
+    font-size: 0.5em;
+}
+
