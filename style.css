@@ -84,6 +84,10 @@ main {
     top: 20%;
     left: 7%;
     line-height: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between; 
+    height: 15%;
 }
 
 #intro h2{
