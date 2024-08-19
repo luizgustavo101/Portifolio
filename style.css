@@ -71,13 +71,13 @@ main {
     background-image: url('imagem/pc1.png');
     background-repeat: no-repeat;
     background-size: 700px 600px;
-    background-position: 0% 70%;
+    background-position: 0% 100%;
 }
 
 #container{
     position: absolute;
     left: 50px;
-    top: 20%;
+    top: 25%;
 }
 
 #intro{
