@@ -25,11 +25,11 @@ html {
 }
 
 body {
+    height: 100vh;
     display: grid;
     grid-template-columns:1fr;
-    grid-template-rows:50px 1fr 30px;
+    grid-template-rows:auto 1fr auto;
     scrollbar-width: none;
-    height: 100vh;
 }
 
 header, main, footer{
@@ -39,6 +39,7 @@ header, main, footer{
 header {
     background: linear-gradient(to right, #41397c, #0e0e0e);
     display: flex;
+    height: 50px;
     justify-content: end;
     align-items: center;
     z-index: 1;
@@ -136,6 +137,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 30px;
 }
 
 footer span{
