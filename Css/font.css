@@ -1,0 +1,14 @@
+@font-face {
+    font-family: gagalin;
+    src: url(fonte/Gagalin-Regular.otf);
+}
+
+@font-face {
+    font-family: open sans;
+    src: url(fonte/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: anton;
+    src: url(fonte/Anton-Regular.ttf);
+}
