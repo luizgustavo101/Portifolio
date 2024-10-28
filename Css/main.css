@@ -7,11 +7,11 @@
 
 html {
     scrollbar-width: none;
-    min-height: 100vh;
+    height: 100vh;
 }
 
 body {
-    min-height: 100vh;
+    height: 100vh;
     scrollbar-width: none;
 }
 
@@ -77,8 +77,6 @@ main {
 
 #front{
     color:#00793e;
-    font-weight: 700;
-    line-height:1em;
 }
 
 #contato{
@@ -91,8 +89,9 @@ main {
 
 #contateme{
     background-color: #41397c;
-    border-radius: 10px;
-    padding: 1vw;
+    padding: 5px;
+    font-size: 2.1vw;
+    border-radius: 5px;
     font-family: 'gagalin';
     letter-spacing: .19em;
     display: inline-block;
@@ -115,6 +114,18 @@ main {
 #contato a img:hover{
     filter: grayscale(0);
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 footer {
     background: linear-gradient(to left, #41397c, #0e0e0e);
