@@ -1,3 +1,12 @@
+:root{
+    --cor-primaria:#41397c;
+    --cor-secundaria:#00bf63;
+    --cor-terciaria:#0e0e0e;
+    --cor-texto-primaria:#ffffff;
+    --cor-texto-secundaria:#d8d8d8;
+
+}
+
 * {
     margin: 0px;
     border: 0px;
@@ -20,12 +29,13 @@ header, main, footer{
 }
 
 header {
-    background: linear-gradient(to right, #41397c, #0e0e0e);
+    background: linear-gradient(to right, var(--cor-primaria), var(--cor-terciaria));
     display: flex;
     height: 50px;
     justify-content: end;
     align-items: center;
     z-index: 1;
+    padding: 0px 50px 0px 50px;
 }
 
 nav ul{
@@ -36,7 +46,7 @@ nav ul{
 }
 
 nav ul li a{
-    color: white;
+    color: var(--cor-texto-primaria);
     font-family: 'Gagalin' , sem serifa ; 
     letter-spacing:0.15em;    
     text-decoration: none;
@@ -44,14 +54,25 @@ nav ul li a{
 }
 
 main {
-    background-color: #0e0e0e;
-    color: white;
+    background-color: var(--cor-terciaria);
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+    padding: 0px 50px 0px 50px;
+}
+
+main article h1{
+    font-family: anton;
+    font-size: 2.5rem;
+    color: var(--cor-texto-primaria);
+    margin-bottom: 30px;
 }
 
 #apresentacao{
     width: 100%;
     height: 700px;
     padding-top: 200px;
+    padding-left: 100px;
 }
 
 #intro{
@@ -62,9 +83,9 @@ main {
 
 #intro h2{
     font-family: 'anton';
-    font-size: max(7vw, 3em);
+    font-size: max(6vw, 2em);
     letter-spacing:.1em;
-    color:#00793e ;
+    color:var(--cor-primaria);
 }
 
 #intro h4{
@@ -76,7 +97,7 @@ main {
 }
 
 #front{
-    color:#00793e;
+    color:var(--cor-primaria);
 }
 
 #contato{
@@ -95,8 +116,9 @@ main {
     font-family: 'gagalin';
     letter-spacing: .19em;
     display: inline-block;
-    filter: grayscale(1);
-    transition: .5;   
+    filter: grayscale(.9);
+    transition: .5s;
+    cursor: pointer;
 }
 
 #contateme:hover{
@@ -107,7 +129,7 @@ main {
     max-width: 3vw;
     height: auto;
     margin: 0px 10px 0px;
-    filter: grayscale(1);
+    filter: grayscale(.9);
     transition: .5s;
 }
 
@@ -115,6 +137,32 @@ main {
     filter: grayscale(0);
 }
 
+#sobre{
+
+}
+
+.sobre-min{
+    position: relative;
+    padding-left: 50px;
+    font-family:open sans ;
+    color: var(--cor-texto-secundaria);
+}
+
+.ponto-verde{
+    position: absolute;
+    color: var(--cor-secundaria);
+    left: 0;
+    top: 0;
+    font-family: open sans;
+    font-weight: 800;
+}
+
+.ponto-verde::after{
+    content:"";
+    width: 10px;
+    height: 10px;
+    background-color: var(--cor-secundaria);
+}
 
 
 
