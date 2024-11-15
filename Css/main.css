@@ -7,12 +7,13 @@
   --cor-texto-secundaria: #d8d8d8;
   --cor-texto-terciaria: #0e0e0e;
   --cor-texto-quartenaria: #505050;
+  --cor-texto-quinternaria: #d0d0d0;
 }
 
-* {
-  margin: 0px;
-  border: 0px;
-  padding: 0px;
+:root * {
+  margin: 0;
+  border: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -178,7 +179,7 @@ main article h1 {
   width: 100%;
 }
 
-p {
+.sobre-min p {
   letter-spacing: 0.1rem;
   margin-left: 10px;
   margin-top: 2px;
@@ -226,38 +227,121 @@ p {
 }
 
 #projetos {
-    background: linear-gradient(180deg, rgba(14,14,14,1) 0%, rgba(65,57,124,1) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(14, 14, 14, 1) 0%,
+    rgba(65, 57, 124, 1) 100%
+  );
   color: white;
   padding: 0px 50px 0px 50px;
 }
 
-#projetos h1{
-    display: flex;
-    justify-content: end;
+.float-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-.float-left{
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    margin-top: 50px;
-    margin-bottom: 50px;
+.float-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
 }
 
-.float-right{
-   
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
+.float-element {
+  width: 700px;
+  height: 400px;
+  background-color: var(--cor-quartenaria);
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  position: relative;
 }
 
-.float-element{
-    width: 700px;
-    height: 400px;
-    background-color: var(--cor-quartenaria);
+.preview {
+  width: 40%;
+  height: 100%;
 }
 
+.sobre_projeto {
+  width: 60%;
+  height: 100%;
+}
 
+.title_projeto {
+  color: var(--cor-terciaria);
+  font-family: anton;
+}
+
+.descriçao_projeto {
+  color: var(--cor-texto-quartenaria);
+  font-family: gagalin;
+  margin-top: 20px;
+  padding: 0px 5px;
+  letter-spacing: 2px;
+  line-height: 1.3rem;
+}
+
+.ver_projeto {
+  margin: 20px 0px 0px 0px;
+  display: flex;
+  gap: 20px;
+  align-items: baseline;
+}
+
+.codigo_projeto {
+  background-color: var(--cor-texto-quinternaria);
+  color: var(--cor-terciaria);
+  font-family: open sans;
+  font-weight: bold;
+  display: flex;
+  padding: 7px;
+  border-radius: 20px;
+  transform: scale(0.9);
+  transition: .3s;
+}
+
+.github:hover{
+  background-color: var(--cor-primaria);
+  color: var(--cor-quartenaria);
+}
+
+.abrir:hover{
+  color: var(--cor-quartenaria);
+  background-color: var(--cor-secundaria);
+}
+
+.codigo_projeto img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.tecnologias{
+  display: flex;
+  bottom: 10px;
+  position: absolute;
+  flex-direction: row;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.tecnologias div{
+  display: flex;
+  flex-direction: row;
+}
+
+.tecnologias div p{
+  color: var(--cor-terciaria);
+  font-family:gagalin ;
+}
+
+.tecnologias div img{
+  width: 20px;
+  height: 20px;
+}
 
 
 footer {
