@@ -10,7 +10,7 @@
   --cor-texto-quinternaria: #d0d0d0;
 }
 
-:root * {
+* {
   margin: 0;
   border: 0;
   padding: 0;
