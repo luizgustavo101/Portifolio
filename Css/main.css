@@ -19,6 +19,7 @@
 
 html {
   scrollbar-width: none;
+  scroll-behavior: smooth;
   height: 100vh;
   width: 100vw;
 }
@@ -29,9 +30,7 @@ body {
   scrollbar-width: none;
 }
 
-header,
-main,
-footer {
+header,main,footer {
   width: 100%;
   padding: 0px 50px 0px 50px;
 }
@@ -53,7 +52,7 @@ header {
 nav ul {
   display: flex;
   justify-content: space-between;
-  width: 500px;
+  width: 400px;
   list-style: none;
 }
 
@@ -251,7 +250,7 @@ main article h1 {
     rgba(65, 57, 124, 1) 100%
   );
   color: white;
-  padding: 0px 50px 0px 50px;
+  padding: 0px 100px 0px 100px;
 }
 
 .float-left {
@@ -276,11 +275,26 @@ main article h1 {
   flex-direction: row;
   padding: 10px;
   position: relative;
+  gap: 10px;
+  border:2px solid transparent ;
+}
+
+.float-element:hover{
+  border: 2px solid var(--cor-secundaria)
 }
 
 .preview {
   width: 40%;
   height: 100%;
+}
+
+.imagem-projeto{
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  scrollbar-width: none;
+  background-image: url(../img/calc.png);
+  background-size: cover;
 }
 
 .sobre_projeto {
@@ -291,6 +305,7 @@ main article h1 {
 .title_projeto {
   color: var(--cor-terciaria);
   font-family: anton;
+  letter-spacing: 1px; 
 }
 
 .descriçao_projeto {
@@ -308,6 +323,7 @@ main article h1 {
   gap: 20px;
   align-items: baseline;
 }
+
 
 .codigo_projeto {
   background-color: var(--cor-texto-quinternaria);
@@ -370,6 +386,21 @@ main article h1 {
 .tecnologias div img{
   width: 20px;
   height: 20px;
+}
+
+.subir{
+  background-color:var(--cor-secundaria);
+  position: fixed;
+  z-index: 1;
+  border-radius: 10%;
+  padding: 5px;
+  right: 10px;
+  bottom: 10px;
+  transition:.8s;
+}
+
+.subir:hover{
+  transform: scale(1.2);
 }
 
 
