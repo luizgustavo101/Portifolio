@@ -400,9 +400,8 @@ main article h1 {
 }
 
 .subir:hover{
-  transform: scale(1.2);
+  background-color: var(--cor-texto-secundaria);
 }
-
 
 footer {
   background: linear-gradient(to left, #41397c, #0e0e0e);
