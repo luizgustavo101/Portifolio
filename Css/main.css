@@ -66,7 +66,8 @@ nav ul li a {
   transform-origin: 0%;
 }
 
-.nav{
+nav ul li a::before{
+  content: "";
   position: absolute;
   bottom: 0;
   width: 0%;
@@ -75,7 +76,7 @@ nav ul li a {
   transition: .5s;
 }
 
-nav ul li a:hover > .nav{
+nav ul li a:hover::before{
   width: 100%;
 } 
 
@@ -139,6 +140,10 @@ main article h1 {
   gap: 20px;
 }
 
+#contato a p{
+  color: white;
+}
+
 #contateme {
   background-color: #41397c;
   padding: 5px;
@@ -147,7 +152,7 @@ main article h1 {
   font-family: "gagalin";
   letter-spacing: 0.19em;
   display: inline-block;
-  filter: grayscale(0.9);
+  filter: grayscale(0.5);
   transition: 0.5s;
   cursor: pointer;
 }
@@ -161,7 +166,7 @@ main article h1 {
   max-width: 3vw;
   height: auto;
   margin: 0px 10px 0px;
-  filter: grayscale(0.9);
+  filter: grayscale(0.5);
   transition: 0.5s;
 }
 
